@@ -1,0 +1,153 @@
+May 31 10:00:01 server sshd: Failed password for invalid user admin from 192.168.1.1
+May 31 10:00:02 server sshd: Failed password for root from 192.168.1.1
+May 31 10:00:03 server sshd: Accepted password for user1 from 192.168.1.2
+May 31 10:00:04 server sshd: Failed password for invalid user test from 192.168.1.3
+May 31 10:00:05 server sshd: Failed password for admin from 192.168.1.4
+May 31 10:00:06 server sshd: Failed password for root from 192.168.1.1
+May 31 10:00:07 server sshd: Failed password for admin from 192.168.1.1
+May 31 10:00:08 server sshd: Failed password for user from 192.168.1.5
+May 31 10:00:09 server sshd: Failed password for root from 192.168.1.6
+May 31 10:00:10 server sshd: Accepted password for user1 from 192.168.1.2
+May 31 10:00:11 server sshd: Failed password for admin from 192.168.1.7
+May 31 10:00:12 server sshd: Invalid user guest from 192.168.1.8
+May 31 10:00:13 server sshd: Failed password for root from 192.168.1.1
+May 31 10:00:14 server sshd: Failed password for admin from 192.168.1.1
+May 31 10:00:15 server sshd: Connection closed by 192.168.1.9
+May 31 10:00:16 server sshd: Failed password for root from 192.168.1.10
+May 31 10:00:17 server sshd: Failed password for admin from 192.168.1.10
+May 31 10:00:18 server sshd: Failed password for user from 192.168.1.10
+May 31 10:00:19 server sshd: Failed password for test from 192.168.1.10
+May 31 10:00:20 server sudo: user1 FAILED su for root
+May 31 10:01:00 server kernel: Firewall: IN=eth0 SRC=192.168.1.10 DPT=22 PROTO=TCP
+May 31 10:01:01 server kernel: Firewall: IN=eth0 SRC=192.168.1.10 DPT=80 PROTO=TCP
+May 31 10:01:02 server kernel: Firewall: IN=eth0 SRC=192.168.1.10 DPT=443 PROTO=TCP
+May 31 10:01:03 server kernel: Firewall: IN=eth0 SRC=192.168.1.10 DPT=3306 PROTO=TCP
+May 31 10:01:04 server kernel: Firewall: IN=eth0 SRC=192.168.1.10 DPT=8080 PROTO=TCP
+May 31 10:02:00 server sudo: user1 FAILED su for root on /dev/pts/0
+May 31 10:02:01 server sudo: hacker FAILED su for root on /dev/pts/1
+May 31 10:02:02 server sudo: user2 FAILED su for root on /dev/pts/2
+May 31 10:03:00 server sshd: Received disconnect from 192.168.1.1: Too many auth failures
+May 31 10:03:01 server sshd: Received disconnect from 192.168.1.10: Too many auth failures
+May 31 10:04:00 server su: FAILED SU from user1 to root on /dev/console
+May 31 10:04:01 server su: FAILED SU from user2 to root on /dev/console
+May 31 10:05:00 server sshd: error: maximum authentication attempts exceeded for root
+May 31 10:06:00 server named: DNS query from 192.168.1.1 for malware.evil.com
+May 31 10:06:01 server named: DNS query REFUSED from 192.168.1.10
+May 31 10:06:02 server kernel: TCP connection attempt from 192.168.1.1 port 4444
+May 31 10:06:03 server kernel: UDP flood detected from 192.168.1.10
+May 31 10:07:00 server EventID 4625: Failed login attempt user:Administrator
+May 31 10:07:01 server EventID 4624: Successful login user:user1
+May 31 10:07:02 server EventID 4648: Login attempt with explicit credentials
+May 31 10:07:03 server EventID 4720: New user account created by Administrator
+May 31 10:07:04 server EventID 4728: User added to security group
+May 31 10:08:00 server kernel: Firewall: IN=eth0 SRC=192.168.1.10 DPT=22 PROTO=TCP
+May 31 10:08:01 server kernel: Firewall: IN=eth0 SRC=192.168.1.10 DPT=80 PROTO=TCP
+May 31 10:09:00 server sudo: hacker FAILED su for root on /dev/pts/1
+May 31 10:10:00 server sshd: error: maximum authentication attempts exceeded for root from 192.168.1.1
+May 31 10:11:00 server EventID 4625: Failed login attempt user:guest
+May 31 10:11:01 server EventID 4625: Failed login attempt user:test
+May 31 10:11:02 server EventID 4625: Failed login attempt user:admin
+May 31 10:11:03 server EventID 4624: Successful login user:user2
+May 31 10:11:04 server EventID 4648: Login attempt with explicit credentials user:hacker
+May 31 10:11:05 server EventID 4720: New user account created by hacker
+May 31 10:11:06 server EventID 4728: User added to security group by Administrator
+May 31 10:11:07 server EventID 4625: Failed login attempt user:root
+May 31 10:11:08 server EventID 4634: User logoff user:user1
+May 31 10:11:09 server EventID 4648: Login attempt with explicit credentials user:admin
+May 31 10:12:00 server named: DNS query from 192.168.1.1 for trojan.badsite.ru
+May 31 10:12:01 server named: DNS query from 192.168.1.10 for malware.evil.com
+May 31 10:12:02 server named: DNS query from 192.168.1.3 for suspicious.darkweb.io
+May 31 10:12:03 server named: DNS query REFUSED from 192.168.1.4
+May 31 10:12:04 server named: DNS query from 192.168.1.10 for botnet.command.cc
+May 31 10:12:05 server named: DNS query from 192.168.1.1 for ransomware.payload.net
+May 31 10:12:06 server named: DNS query REFUSED from 192.168.1.7
+May 31 10:12:07 server named: DNS query from 192.168.1.10 for exfil.hacker.xyz
+May 31 10:12:00 server named: DNS query from 192.168.1.1 for trojan.badsite.ru
+May 31 10:00:01 server sshd: Failed password for invalid user admin from 192.168.1.1
+May 31 10:00:02 server sshd: Failed password for root from 192.168.1.1
+May 31 10:00:03 server sshd: Accepted password for user1 from 192.168.1.2
+May 31 10:00:04 server sshd: Failed password for invalid user test from 192.168.1.3
+May 31 10:00:05 server sshd: Failed password for admin from 192.168.1.4
+May 31 10:00:06 server sshd: Failed password for root from 192.168.1.1
+May 31 10:00:07 server sshd: Failed password for admin from 192.168.1.1
+May 31 10:00:08 server sshd: Failed password for user from 192.168.1.5
+May 31 10:00:09 server sshd: Failed password for root from 192.168.1.6
+May 31 10:00:10 server sshd: Accepted password for user1 from 192.168.1.2
+May 31 10:00:11 server sshd: Failed password for admin from 192.168.1.7
+May 31 10:00:12 server sshd: Invalid user guest from 192.168.1.8
+May 31 10:00:13 server sshd: Failed password for root from 192.168.1.1
+May 31 10:00:14 server sshd: Failed password for admin from 192.168.1.1
+May 31 10:00:15 server sshd: Connection closed by 192.168.1.9
+May 31 10:00:16 server sshd: Failed password for root from 192.168.1.10
+May 31 10:00:17 server sshd: Failed password for admin from 192.168.1.10
+May 31 10:00:18 server sshd: Failed password for user from 192.168.1.10
+May 31 10:00:19 server sshd: Failed password for test from 192.168.1.10
+May 31 10:00:20 server sudo: user1 FAILED su for root
+May 31 10:01:00 server kernel: Firewall: IN=eth0 SRC=192.168.1.10 DPT=22 PROTO=TCP
+May 31 10:01:01 server kernel: Firewall: IN=eth0 SRC=192.168.1.10 DPT=80 PROTO=TCP
+May 31 10:01:02 server kernel: Firewall: IN=eth0 SRC=192.168.1.10 DPT=443 PROTO=TCP
+May 31 10:01:03 server kernel: Firewall: IN=eth0 SRC=192.168.1.10 DPT=3306 PROTO=TCP
+May 31 10:01:04 server kernel: Firewall: IN=eth0 SRC=192.168.1.10 DPT=8080 PROTO=TCP
+May 31 10:02:00 server sudo: user1 FAILED su for root on /dev/pts/0
+May 31 10:02:01 server sudo: hacker FAILED su for root on /dev/pts/1
+May 31 10:02:02 server sudo: user2 FAILED su for root on /dev/pts/2
+May 31 10:03:00 server sshd: Received disconnect from 192.168.1.1: Too many auth failures
+May 31 10:03:01 server sshd: Received disconnect from 192.168.1.10: Too many auth failures
+May 31 10:04:00 server su: FAILED SU from user1 to root on /dev/console
+May 31 10:04:01 server su: FAILED SU from user2 to root on /dev/console
+May 31 10:05:00 server sshd: error: maximum authentication attempts exceeded for root
+May 31 10:06:00 server named: DNS query from 192.168.1.1 for malware.evil.com
+May 31 10:06:01 server named: DNS query REFUSED from 192.168.1.10
+May 31 10:06:02 server kernel: TCP connection attempt from 192.168.1.1 port 4444
+May 31 10:06:03 server kernel: UDP flood detected from 192.168.1.10
+May 31 10:07:00 server EventID 4625: Failed login attempt user:Administrator
+May 31 10:07:01 server EventID 4624: Successful login user:user1
+May 31 10:07:02 server EventID 4648: Login attempt with explicit credentials
+May 31 10:07:03 server EventID 4720: New user account created by Administrator
+May 31 10:07:04 server EventID 4728: User added to security group
+May 31 10:08:00 server kernel: Firewall: IN=eth0 SRC=192.168.1.10 DPT=22 PROTO=TCP
+May 31 10:08:01 server kernel: Firewall: IN=eth0 SRC=192.168.1.10 DPT=80 PROTO=TCP
+May 31 10:09:00 server sudo: hacker FAILED su for root on /dev/pts/1
+May 31 10:10:00 server sshd: error: maximum authentication attempts exceeded for root from 192.168.1.1
+May 31 10:11:00 server EventID 4625: Failed login attempt user:guest
+May 31 10:11:01 server EventID 4625: Failed login attempt user:test
+May 31 10:11:02 server EventID 4625: Failed login attempt user:admin
+May 31 10:11:03 server EventID 4624: Successful login user:user2
+May 31 10:11:04 server EventID 4648: Login attempt with explicit credentials user:hacker
+May 31 10:11:05 server EventID 4720: New user account created by hacker
+May 31 10:11:06 server EventID 4728: User added to security group by Administrator
+May 31 10:11:07 server EventID 4625: Failed login attempt user:root
+May 31 10:11:08 server EventID 4634: User logoff user:user1
+May 31 10:11:09 server EventID 4648: Login attempt with explicit credentials user:admin
+May 31 10:12:00 server named: DNS query from 192.168.1.1 for trojan.badsite.ru
+May 31 10:12:01 server named: DNS query from 192.168.1.10 for malware.evil.com
+May 31 10:12:02 server named: DNS query from 192.168.1.3 for suspicious.darkweb.io
+May 31 10:12:03 server named: DNS query REFUSED from 192.168.1.4
+May 31 10:12:04 server named: DNS query from 192.168.1.10 for botnet.command.cc
+May 31 10:12:05 server named: DNS query from 192.168.1.1 for ransomware.payload.net
+May 31 10:12:06 server named: DNS query REFUSED from 192.168.1.7
+May 31 10:12:07 server named: DNS query from 192.168.1.10 for exfil.hacker.xyz
+May 31 10:12:08 server named: DNS query from 192.168.1.1 for trojan.badsite.ru
+May 31 10:13:00 server sudo: hacker : TTY=pts/1 ; PWD=/root ; USER=root ; COMMAND=/bin/bash
+May 31 10:13:01 server sudo: user1 : TTY=pts/0 ; PWD=/home/user1 ; USER=root ; COMMAND=/bin/cat /etc/shadow
+May 31 10:13:02 server su: Successful su for root by hacker
+May 31 10:14:00 server kernel: File accessed: /etc/passwd by user hacker
+May 31 10:14:01 server kernel: File accessed: /etc/shadow by user hacker
+May 31 10:14:02 server kernel: Large file transfer detected: 500MB to 192.168.1.10
+May 31 10:14:03 server vsftpd: UPLOAD /tmp/stolen_data.zip to 192.168.1.10
+May 31 10:15:00 server kernel: TCP connection attempt from 192.168.1.1 port 4444
+May 31 10:15:01 server kernel: Suspicious process: /tmp/malware.sh executed by hacker
+May 31 10:15:02 server kernel: Reverse shell detected from 192.168.1.1:4444
+May 31 10:15:03 server kernel: Outbound connection to 45.33.32.156:443 from hacker
+May 31 10:16:00 server kernel: Firewall: IN=eth0 SRC=192.168.1.10 DPT=21 PROTO=TCP
+May 31 10:16:01 server kernel: Firewall: IN=eth0 SRC=192.168.1.10 DPT=23 PROTO=TCP
+May 31 10:16:02 server kernel: Firewall: IN=eth0 SRC=192.168.1.10 DPT=3389 PROTO=TCP
+May 31 10:16:03 server kernel: Firewall: IN=eth0 SRC=192.168.1.10 DPT=5900 PROTO=TCP
+May 31 10:16:04 server kernel: Firewall: IN=eth0 SRC=192.168.1.10 DPT=8443 PROTO=TCP
+May 31 10:17:00 server EventID 4720: New user account created: backdoor_user by hacker
+May 31 10:17:01 server EventID 4728: backdoor_user added to Administrators group
+May 31 10:17:02 server EventID 4738: User account modified: admin password changed
+May 31 10:17:03 server EventID 4732: Member added to privileged group by hacker
+May 31 10:18:00 server cron: Suspicious cron job added by hacker
+May 31 10:18:01 server kernel: New service installed: evil_service by hacker
+May 31 10:18:02 server systemd: Service started: backdoor.service
